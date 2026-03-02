@@ -25,6 +25,7 @@ export default async function Page({
 }: {
   params: Promise<{ id: string }>
 }) {
+  console.log("page params")
   // const { id } = await params
   return <pre>{ JSON.stringify( params , [] , 2) }</pre>
   // ...
